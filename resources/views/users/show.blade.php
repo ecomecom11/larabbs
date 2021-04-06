@@ -8,7 +8,7 @@
 
   <div class="col-lg-3 col-md-3 hidden-sm hidden-xs user-info">
     <div class="card ">
-      <img class="card-img-top" src="https://cdn.iconscout.com/icon/free/png-512/user-acccount-avatar-man-profile-display-picture-30447.png">
+      <img class="card-img-top" src="{{ $user->avatar }}">
       <div class="card-body">
             <h5><strong>Personal Info</strong></h5>
             <p>{{ $user->introduction }}</p>
