@@ -31,8 +31,14 @@
             {{ Auth::user()->name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">User Centre</a>
-              <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">Edit Information</a>
+              <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">
+                  <i class="far fa-user mr-2"></i>
+                  User Centre
+              </a>
+              <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">
+                <i class="far fa-edit mr-2"></i>
+                Edit Information
+              </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" id="logout" href="#">
                 <form action="{{ route('logout') }}" method="POST">
